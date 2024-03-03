@@ -1,0 +1,151 @@
+/* Styles for header */
+header {
+    background-color: #002f34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styles for main content */
+main {
+    padding: 20px;
+}
+
+.content-block {
+    margin-bottom: 20px;
+}
+
+/* Styles for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Styles for footer */
+footer {
+    background-color: #002f34;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative; /* Змінено позицію на relative */
+    clear: both;
+}
+
+/* Links */
+a {
+    color: #4CAF50;
+}
+
+/* Text formatting */
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Special characters */
+.special {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Forms */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"], textarea, select {
+    width: calc(100% - 16px); 
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Flexbox positioning */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > div {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    main > div {
+        flex: 1 1 100%;
+    }
+}
